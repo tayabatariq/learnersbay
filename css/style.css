@@ -190,7 +190,7 @@
       padding: 11px 24px;
       border-bottom: 1px solid #f0f0f0;
     }
-    .mobile-nav a:hover { color: var(--red); background: #fef0f2; }
+    .mobile-nav a:hover { color: var(--red);  }
     .mobile-nav .mobile-btn-book {
       margin: 10px 20px 0;
       background: var(--red);
