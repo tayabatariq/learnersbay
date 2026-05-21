@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Online – Learners Bay Driving School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/book-online.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ════ TOP BAR ════ -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <a href="#">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        34 Bradford Park Dr, Bolton BL2 1PA
+      </a>
+      <a href="tel:+447581323456">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.64A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.89a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +44 758 13 23456
+      </a>
+      <span>Mon–Sun | 08:00 AM – 09:00 PM</span>
+    </div>
+    <div class="topbar-right">
+      <a href="mailto:admin@learnersbay.co.uk">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        admin@learnersbay.co.uk
+      </a>
+      <a href="https://www.facebook.com/learnersbayUK/" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#ccc"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ════ NAVBAR ════ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <img src="image/logo.png" alt="Learners Bay Logo" />
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown">
+        <a href="#">Our Prices</a>
+        <ul class="dropdown-menu">
+          <li><a href="standard-driving-courses-book-online.html">Standard Packages</a></li>
+          <li><a href="manual-intensive-courses.html">Manual Intensive</a></li>
+          <li><a href="automatic-intensive-courses.html">Automatic Intensive</a></li>
+        </ul>
+      </li>
+      <li class="btn-book"><a href="book-online.html">Book Online</a></li>
+      <li class="btn-pay"><a href="pay-online.html">Pay Online</a></li>
+      <li><a href="index.html#aboutus">About Us</a></li>
+      <li><a href="index.html#gallery">Gallery</a></li>
+      <li><a href="index.html#Joinus">Join Us</a></li>
+      <li><a href="index.html#ourinstructor">Our Instructors</a></li>
+      <li><a href="index.html#FAQ">FAQ</a></li>
+      <li><a href="index.html#Contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="standard-driving-courses-book-online.html">Standard Packages</a>
+    <a href="manual-intensive-courses.html">Manual Intensive</a>
+    <a href="automatic-intensive-courses.html">Automatic Intensive</a>
+    <a href="index.html#aboutus">About Us</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#Joinus">Join Us</a>
+    <a href="index.html#ourinstructor">Our Instructors</a>
+    <a href="index.html#FAQ">FAQ</a>
+    <a href="index.html#Contact">Contact</a>
+    <a href="book-online.html" class="mobile-btn-book">Book Online</a>
+    <a href="pay-online.html" class="mobile-btn-pay">Pay Online</a>
+  </div>
+</nav>
+
+<!-- ════ BOOKING LAYOUT ════ -->
+<div class="book-wrapper">
+  <div class="book-layout">
+
+    <!-- ── LEFT: Multi-Step Content ── -->
+    <main class="book-main">
+
+      <!-- ══ STEP 1: Service List ══ -->
+      <div id="step1" class="book-step">
+        <h2 class="book-main-heading">Book Your Appointment</h2>
+        <div class="service-list">
+
+          <div class="service-item"
+               data-name="Driving Lesson"
+               data-desc="Book your Driving Lesson at a time convenient to you"
+               data-price="From £35"
+               data-duration="60 minutes"
+               data-dmins="60">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name">Driving Lesson</h3>
+              <p class="service-desc">Book your Driving Lesson at a time convenient to you</p>
+              <div class="service-meta"><span class="service-price">From £35</span><span class="service-dot">·</span><span class="service-duration">60 minutes</span></div>
+            </div>
+            <button class="service-book-btn" onclick="bookService(this)">Book</button>
+          </div>
+          <div class="service-divider"></div>
+
+          <div class="service-item"
+               data-name="Driving Lesson 1.5 hour"
+               data-desc="Book your Driving Lesson at a time convenient to you"
+               data-price="From £50"
+               data-duration="90 minutes"
+               data-dmins="90">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name">Driving Lesson 1.5 hour</h3>
+              <p class="service-desc">Book your Driving Lesson at a time convenient to you</p>
+              <div class="service-meta"><span class="service-price">From £50</span><span class="service-dot">·</span><span class="service-duration">90 minutes</span></div>
+            </div>
+            <button class="service-book-btn" onclick="bookService(this)">Book</button>
+          </div>
+          <div class="service-divider"></div>
+
+          <div class="service-item"
+               data-name="Driving Lesson 2 hours"
+               data-desc="Book your Driving Lesson at a time convenient to you"
+               data-price="From £70"
+               data-duration="2 hours"
+               data-dmins="120">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name">Driving Lesson 2 hours</h3>
+              <p class="service-desc">Book your Driving Lesson at a time convenient to you</p>
+              <div class="service-meta"><span class="service-price">From £70</span><span class="service-dot">·</span><span class="service-duration">2 hours</span></div>
+            </div>
+            <button class="service-book-btn" onclick="bookService(this)">Book</button>
+          </div>
+          <div class="service-divider"></div>
+
+          <div class="service-item"
+               data-name="Standard 1 Hour Lesson (Automatic)"
+               data-desc="Book your standard automatic lesson with a DVSA-qualified instructor"
+               data-price="£38"
+               data-duration="60 minutes"
+               data-dmins="60">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name service-name--upper">Standard 1 Hour Lesson (Automatic)</h3>
+              <p class="service-desc">Book your standard automatic lesson with a DVSA-qualified instructor</p>
+              <div class="service-meta"><span class="service-price">£38</span><span class="service-dot">·</span><span class="service-duration">60 minutes</span></div>
+            </div>
+            <button class="service-book-btn" onclick="bookService(this)">Book</button>
+          </div>
+          <div class="service-divider"></div>
+
+          <div class="service-item"
+               data-name="Standard 1 Hour Lesson (Manual)"
+               data-desc="Book your standard manual lesson with a DVSA-qualified instructor"
+               data-price="£35"
+               data-duration="60 minutes"
+               data-dmins="60">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name service-name--upper">Standard 1 Hour Lesson (Manual)</h3>
+              <p class="service-desc">Book your standard manual lesson with a DVSA-qualified instructor</p>
+              <div class="service-meta"><span class="service-price">£35</span><span class="service-dot">·</span><span class="service-duration">60 minutes</span></div>
+            </div>
+            <button class="service-book-btn" onclick="bookService(this)">Book</button>
+          </div>
+          <div class="service-divider"></div>
+
+          <div class="service-item"
+               data-name="Standard 1.5 Hour Lesson (Automatic)"
+               data-desc="Extended automatic lesson for faster progress"
+               data-price="£55"
+               data-duration="90 minutes"
+               data-dmins="90">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name service-name--upper">Standard 1.5 Hour Lesson (Automatic)</h3>
+              <p class="service-desc">Extended automatic lesson for faster progress</p>
+              <div class="service-meta"><span class="service-price">£55</span><span class="service-dot">·</span><span class="service-duration">90 minutes</span></div>
+            </div>
+            <button class="service-book-btn" onclick="bookService(this)">Book</button>
+          </div>
+          <div class="service-divider"></div>
+
+          <div class="service-item"
+               data-name="Standard 1.5 Hour Lesson (Manual)"
+               data-desc="Extended manual lesson for faster progress"
+               data-price="£50"
+               data-duration="90 minutes"
+               data-dmins="90">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name service-name--upper">Standard 1.5 Hour Lesson (Manual)</h3>
+              <p class="service-desc">Extended manual lesson for faster progress</p>
+              <div class="service-meta"><span class="service-price">£50</span><span class="service-dot">·</span><span class="service-duration">90 minutes</span></div>
+            </div>
+            <button class="service-book-btn" onclick="bookService(this)">Book</button>
+          </div>
+          <div class="service-divider"></div>
+
+          <div class="service-item"
+               data-name="Standard 2 Hour Lesson (Automatic)"
+               data-desc="Double lesson for maximum progress per session – automatic"
+               data-price="£72"
+               data-duration="2 hours"
+               data-dmins="120">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name service-name--upper">Standard 2 Hour Lesson (Automatic)</h3>
+              <p class="service-desc">Double lesson for maximum progress per session – automatic</p>
+              <div class="service-meta"><span class="service-price">£72</span><span class="service-dot">·</span><span class="service-duration">2 hours</span></div>
+            </div>
+            <button class="service-book-btn" onclick="bookService(this)">Book</button>
+          </div>
+          <div class="service-divider"></div>
+
+          <div class="service-item"
+               data-name="Standard 2 Hour Lesson (Manual)"
+               data-desc="Double lesson for maximum progress per session – manual"
+               data-price="£66"
+               data-duration="2 hours"
+               data-dmins="120">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name service-name--upper">Standard 2 Hour Lesson (Manual)</h3>
+              <p class="service-desc">Double lesson for maximum progress per session – manual</p>
+              <div class="service-meta"><span class="service-price">£66</span><span class="service-dot">·</span><span class="service-duration">2 hours</span></div>
+            </div>
+            <button class="service-book-btn" onclick="bookService(this)">Book</button>
+          </div>
+          <div class="service-divider"></div>
+
+          <div class="service-item"
+               data-name="Mock Driving Test (Manual)"
+               data-desc="Full mock test experience to prepare you for your DVSA driving test"
+               data-price="£60"
+               data-duration="2 hours"
+               data-dmins="120">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name service-name--upper">Mock Driving Test (Manual)</h3>
+              <p class="service-desc">Full mock test experience to prepare you for your DVSA driving test</p>
+              <div class="service-meta"><span class="service-price">£60</span><span class="service-dot">·</span><span class="service-duration">2 hours</span></div>
+            </div>
+            <button class="service-book-btn" onclick="bookService(this)">Book</button>
+          </div>
+          <div class="service-divider"></div>
+
+          <div class="service-item"
+               data-name="Mock Driving Test (Automatic)"
+               data-desc="Full mock test experience to prepare you for your DVSA driving test – automatic"
+               data-price="£65"
+               data-duration="2 hours"
+               data-dmins="120">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name service-name--upper">Mock Driving Test (Automatic)</h3>
+              <p class="service-desc">Full mock test experience to prepare you for your DVSA driving test – automatic</p>
+              <div class="service-meta"><span class="service-price">£65</span><span class="service-dot">·</span><span class="service-duration">2 hours</span></div>
+            </div>
+            <button class="service-book-btn" onclick="bookService(this)">Book</button>
+          </div>
+          <div class="service-divider"></div>
+
+          <div class="service-item"
+               data-name="Motorway Lesson"
+               data-desc="Gain confidence on the motorway with an experienced instructor"
+               data-price="£60"
+               data-duration="2 hours"
+               data-dmins="120">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name service-name--upper">Motorway Lesson</h3>
+              <p class="service-desc">Gain confidence on the motorway with an experienced instructor</p>
+              <div class="service-meta"><span class="service-price">£60</span><span class="service-dot">·</span><span class="service-duration">2 hours</span></div>
+            </div>
+            <button class="service-book-btn" onclick="bookService(this)">Book</button>
+          </div>
+
+        </div>
+      </div><!-- /step1 -->
+
+      <!-- ══ STEP 2: Date & Time Picker ══ -->
+      <div id="step2" class="book-step" style="display:none">
+        <h2 class="book-main-heading">Book Your Appointment</h2>
+
+        <!-- Selected service summary -->
+        <div class="bk-service-row" id="s2-service">
+          <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+          <div class="service-info">
+            <h3 class="service-name" id="s2-name"></h3>
+            <p class="service-desc" id="s2-desc"></p>
+            <div class="service-meta">
+              <span class="service-price" id="s2-price"></span>
+              <span class="service-dot">·</span>
+              <span class="service-duration" id="s2-dur"></span>
+            </div>
+          </div>
+          <button class="bk-change-btn" onclick="showStep(1)">Change</button>
+        </div>
+        <div class="bk-divider"></div>
+
+        <!-- Date navigation -->
+        <div class="date-nav">
+          <h3 class="date-nav-label" id="s2-dateLabel"></h3>
+          <div class="date-nav-arrows">
+            <button class="date-arrow" id="prevWeekBtn" onclick="shiftWeek(-7)" aria-label="Previous week">&#8249;</button>
+            <button class="date-arrow" onclick="shiftWeek(7)" aria-label="Next week">&#8250;</button>
+          </div>
+        </div>
+
+        <!-- Day pills -->
+        <div class="day-pills" id="dayPills"></div>
+
+        <!-- Time slots -->
+        <div id="timeSlots" class="time-slots-wrap"></div>
+      </div><!-- /step2 -->
+
+      <!-- ══ STEP 3: Enter Details ══ -->
+      <div id="step3" class="book-step" style="display:none">
+        <h2 class="book-main-heading">Book Your Appointment</h2>
+
+        <!-- Selected service -->
+        <div class="bk-service-row">
+          <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+          <div class="service-info">
+            <h3 class="service-name" id="s3-name"></h3>
+            <p class="service-desc" id="s3-desc"></p>
+            <div class="service-meta">
+              <span class="service-price" id="s3-price"></span>
+              <span class="service-dot">·</span>
+              <span class="service-duration" id="s3-dur"></span>
+            </div>
+          </div>
+          <button class="bk-change-btn" onclick="showStep(1)">Change</button>
+        </div>
+        <div class="bk-divider"></div>
+
+        <!-- Selected date/time -->
+        <div class="bk-datetime-row">
+          <i class="fa-regular fa-clock bk-dt-icon"></i>
+          <div class="bk-dt-text">
+            <span id="s3-date"></span>
+            <span class="bk-dt-sep">·</span>
+            <span id="s3-time"></span>
+          </div>
+          <button class="bk-change-btn" onclick="showStep(2)">Change</button>
+        </div>
+        <div class="bk-divider"></div>
+
+        <!-- Details form -->
+        <div class="bk-form-wrap">
+          <h3 class="bk-form-heading">Enter Details</h3>
+          <form id="bookingForm" onsubmit="submitBooking(event)">
+            <div class="bk-field">
+              <input type="text" class="bk-input" placeholder="Name" id="f-name" required />
+            </div>
+            <div class="bk-field">
+              <input type="tel" class="bk-input" placeholder="Phone Number *" id="f-phone" required />
+            </div>
+            <div class="bk-field">
+              <input type="email" class="bk-input" placeholder="Email" id="f-email" />
+            </div>
+            <div class="bk-field">
+              <input type="text" class="bk-input" placeholder="Address" id="f-address" />
+            </div>
+            <div class="bk-field">
+              <textarea class="bk-input bk-textarea" placeholder="Notes" id="f-notes"></textarea>
+            </div>
+            <button type="submit" class="bk-confirm-btn">Confirm Booking</button>
+          </form>
+        </div>
+      </div><!-- /step3 -->
+
+      <!-- ══ STEP 4: Booking Confirmed ══ -->
+      <div id="step4" class="book-step" style="display:none">
+        <div class="bk-confirm-wrap">
+          <div class="bk-confirm-icon">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <h2 class="bk-confirm-title">Booking Confirmed</h2>
+          <p class="bk-confirm-msg">We are pleased to inform you that your reservation request has been received and confirmed. Thank you!</p>
+
+          <div class="bk-divider"></div>
+
+          <!-- Service summary -->
+          <div class="bk-service-row bk-service-row--plain">
+            <div class="service-logo"><img src="image/logo.png" alt="LB" /></div>
+            <div class="service-info">
+              <h3 class="service-name" id="s4-name"></h3>
+              <p class="service-desc" id="s4-desc"></p>
+              <div class="service-meta">
+                <span class="service-price" id="s4-price"></span>
+                <span class="service-dot">·</span>
+                <span class="service-duration" id="s4-dur"></span>
+              </div>
+            </div>
+          </div>
+          <div class="bk-divider"></div>
+
+          <!-- Date/time -->
+          <div class="bk-datetime-row">
+            <i class="fa-regular fa-clock bk-dt-icon"></i>
+            <div class="bk-dt-text">
+              <span id="s4-date"></span>
+              <span class="bk-dt-sep">·</span>
+              <span id="s4-time"></span>
+            </div>
+          </div>
+
+          <a id="gcalBtn" href="#" target="_blank" class="bk-gcal-btn">Add to Google Calendar</a>
+        </div>
+      </div><!-- /step4 -->
+
+    </main>
+
+    <!-- ── RIGHT: Sidebar ── -->
+    <aside class="book-sidebar">
+      <div class="sidebar-card">
+
+        <div class="sidebar-logo-wrap">
+          <img src="image/logo.png" alt="Learners Bay" class="sidebar-logo-img" />
+        </div>
+
+        <div class="sidebar-body">
+          <h2 class="sidebar-biz-name">Learners Bay Limited</h2>
+          <p class="sidebar-tagline">Book Your Driving Lessons NOW</p>
+          <p class="sidebar-desc">Ready to start driving? Don't wait — lesson slots fill fast. Book your driving lesson online today and get started with a DVSA-qualified instructor.</p>
+
+          <div class="sidebar-contacts">
+
+            <div class="sidebar-contact-row">
+              <span class="sb-icon sb-icon--teal">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <a href="tel:+447581323456" class="sidebar-contact-link">+44758 13 23456</a>
+            </div>
+
+            <div class="sidebar-contact-row">
+              <span class="sb-icon sb-icon--whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </span>
+              <a href="https://wa.me/447581323456" target="_blank" class="sidebar-contact-link">WhatsApp</a>
+            </div>
+
+            <div class="sidebar-contact-row">
+              <span class="sb-icon sb-icon--instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+              <a href="https://www.instagram.com/learnersbay" target="_blank" class="sidebar-contact-link">@LearnersBay</a>
+            </div>
+
+            <div class="sidebar-contact-row">
+              <span class="sb-icon sb-icon--teal">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+              <span class="sidebar-contact-text">34 Bradford Park Drive, Bolton. BL2 1PA</span>
+            </div>
+
+            <div class="sidebar-contact-row">
+              <span class="sb-icon sb-icon--teal">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <a href="mailto:admin@learnersbay.co.uk" class="sidebar-contact-link">admin@learnersbay.co.uk</a>
+            </div>
+
+            <div class="sidebar-contact-row">
+              <span class="sb-icon sb-icon--teal">
+                <i class="fa-solid fa-globe"></i>
+              </span>
+              <a href="index.html" class="sidebar-contact-link">learnersbay.co.uk</a>
+            </div>
+
+            <div class="sidebar-contact-row">
+              <span class="sb-icon sb-icon--teal">
+                <i class="fa-regular fa-clock"></i>
+              </span>
+              <div class="sidebar-hours">
+                <button class="hours-toggle" id="hoursToggle" aria-expanded="false">
+                  Open until 9:00 PM <i class="fa-solid fa-chevron-down hours-chevron" id="hoursChevron"></i>
+                </button>
+                <div class="hours-dropdown" id="hoursDropdown">
+                  <div class="hours-row"><span>Monday</span><span>8:00 AM – 9:00 PM</span></div>
+                  <div class="hours-row"><span>Tuesday</span><span>8:00 AM – 9:00 PM</span></div>
+                  <div class="hours-row"><span>Wednesday</span><span>8:00 AM – 9:00 PM</span></div>
+                  <div class="hours-row"><span>Thursday</span><span>8:00 AM – 9:00 PM</span></div>
+                  <div class="hours-row"><span>Friday</span><span>8:00 AM – 9:00 PM</span></div>
+                  <div class="hours-row"><span>Saturday</span><span>8:00 AM – 9:00 PM</span></div>
+                  <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- ════ FOOTER ════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#aboutus">About</a>
+      <a href="book-online.html">Book Online</a>
+      <a href="index.html#Contact">Contact</a>
+      <a href="https://www.facebook.com/learnersbayUK/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/learnersbay" target="_blank">Instagram</a>
+    </nav>
+    <div class="footer-logo">
+      <img src="image/logo.png" alt="Learners Bay" />
+    </div>
+    <div class="footer-legal">
+      <a href="#">Legal Notice</a>
+      <span>|</span>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+/* ══════════════════════════════════════
+   BOOKING STATE
+══════════════════════════════════════ */
+const STATE = {
+  service: null,
+  date: null,
+  startMins: null,
+  weekOffset: 0,
+};
+
+const DAY_NAMES  = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const DAY_SHORT  = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const MON_NAMES  = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+/* ── Helpers ── */
+function todayMidnight() {
+  const d = new Date();
+  d.setHours(0,0,0,0);
+  return d;
+}
+
+function formatMins(m) {
+  const h = Math.floor(m / 60);
+  const mn = m % 60;
+  const ampm = h >= 12 ? 'PM' : 'AM';
+  const hr = h > 12 ? h - 12 : h === 0 ? 12 : h;
+  return hr + ':' + String(mn).padStart(2,'0') + ' ' + ampm;
+}
+
+function formatDate(d) {
+  return DAY_NAMES[d.getDay()] + ', ' + MON_NAMES[d.getMonth()] + ' ' + d.getDate();
+}
+
+function showStep(n) {
+  [1,2,3,4].forEach(i => {
+    document.getElementById('step'+i).style.display = i === n ? '' : 'none';
+  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ══ STEP 1 → 2 ══ */
+function bookService(btn) {
+  const item = btn.closest('.service-item');
+  STATE.service = {
+    name:     item.dataset.name,
+    desc:     item.dataset.desc,
+    price:    item.dataset.price,
+    duration: item.dataset.duration,
+    dmins:    parseInt(item.dataset.dmins),
+  };
+  STATE.date = todayMidnight();
+  STATE.weekOffset = 0;
+  STATE.startMins  = null;
+
+  renderStep2();
+  showStep(2);
+}
+
+/* ══ STEP 2: Date picker ══ */
+function renderStep2() {
+  const svc = STATE.service;
+  document.getElementById('s2-name').textContent  = svc.name;
+  document.getElementById('s2-desc').textContent  = svc.desc;
+  document.getElementById('s2-price').textContent = svc.price;
+  document.getElementById('s2-dur').textContent   = svc.duration;
+  renderDayPills();
+  renderTimeSlots();
+}
+
+function shiftWeek(delta) {
+  STATE.weekOffset += delta;
+  if (STATE.weekOffset < 0) STATE.weekOffset = 0;
+  renderDayPills();
+  renderTimeSlots();
+}
+
+function renderDayPills() {
+  const today = todayMidnight();
+  const start = new Date(today);
+  start.setDate(today.getDate() + STATE.weekOffset);
+
+  /* Date label = selected date */
+  document.getElementById('s2-dateLabel').textContent = formatDate(STATE.date);
+
+  /* Disable prev arrow if at current week */
+  document.getElementById('prevWeekBtn').disabled = STATE.weekOffset <= 0;
+
+  const container = document.getElementById('dayPills');
+  container.innerHTML = '';
+
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(start);
+    d.setDate(start.getDate() + i);
+
+    const isSunday  = d.getDay() === 0;
+    const isPast    = d < today;
+    const isSelected = d.toDateString() === STATE.date.toDateString();
+    const disabled  = isSunday || isPast;
+
+    const btn = document.createElement('button');
+    btn.className = 'day-pill' +
+      (isSelected ? ' day-pill--selected' : '') +
+      (disabled   ? ' day-pill--disabled' : '');
+    btn.innerHTML = '<span class="dp-name">' + DAY_SHORT[d.getDay()] + '</span>' +
+                    '<span class="dp-num">'  + d.getDate() + '</span>';
+    btn.disabled = disabled;
+
+    if (!disabled) {
+      const captured = new Date(d);
+      btn.onclick = () => {
+        STATE.date = captured;
+        STATE.startMins = null;
+        renderDayPills();
+        renderTimeSlots();
+      };
+    }
+    container.appendChild(btn);
+  }
+}
+
+function renderTimeSlots() {
+  const container = document.getElementById('timeSlots');
+  container.innerHTML = '';
+
+  const dmins = STATE.service.dmins;
+  const open  = 7  * 60;  /* 7:00 AM */
+  const close = 21 * 60;  /* 9:00 PM */
+
+  const morning = [], afternoon = [], evening = [];
+
+  for (let t = open; t + dmins <= close; t += dmins) {
+    const slot = { start: t, end: t + dmins, label: formatMins(t) };
+    if      (t < 12 * 60) morning.push(slot);
+    else if (t < 17 * 60) afternoon.push(slot);
+    else                   evening.push(slot);
+  }
+
+  if (morning.length)   appendSlotGroup(container, 'Morning',   morning);
+  if (afternoon.length) appendSlotGroup(container, 'Afternoon', afternoon);
+  if (evening.length)   appendSlotGroup(container, 'Evening',   evening);
+}
+
+function appendSlotGroup(parent, label, slots) {
+  const group = document.createElement('div');
+  group.className = 'time-group';
+
+  const lbl = document.createElement('div');
+  lbl.className = 'tg-label';
+  lbl.textContent = label;
+  group.appendChild(lbl);
+
+  const pills = document.createElement('div');
+  pills.className = 'time-pills';
+
+  slots.forEach(s => {
+    const btn = document.createElement('button');
+    btn.className = 'time-pill' + (STATE.startMins === s.start ? ' time-pill--selected' : '');
+    btn.textContent = s.label;
+    btn.onclick = () => selectTime(s.start);
+    pills.appendChild(btn);
+  });
+
+  group.appendChild(pills);
+  parent.appendChild(group);
+}
+
+/* ══ STEP 2 → 3 ══ */
+function selectTime(startMins) {
+  STATE.startMins = startMins;
+  const endMins = startMins + STATE.service.dmins;
+  const timeStr = formatMins(startMins) + ' - ' + formatMins(endMins);
+  const dateStr = formatDate(STATE.date);
+
+  const svc = STATE.service;
+  document.getElementById('s3-name').textContent  = svc.name;
+  document.getElementById('s3-desc').textContent  = svc.desc;
+  document.getElementById('s3-price').textContent = svc.price;
+  document.getElementById('s3-dur').textContent   = svc.duration;
+  document.getElementById('s3-date').textContent  = dateStr;
+  document.getElementById('s3-time').textContent  = timeStr;
+
+  showStep(3);
+}
+
+/* ══ STEP 3 → 4 ══ */
+function submitBooking(e) {
+  e.preventDefault();
+
+  const endMins = STATE.startMins + STATE.service.dmins;
+  const timeStr = formatMins(STATE.startMins) + ' - ' + formatMins(endMins);
+  const dateStr = formatDate(STATE.date);
+  const svc     = STATE.service;
+
+  document.getElementById('s4-name').textContent  = svc.name;
+  document.getElementById('s4-desc').textContent  = svc.desc;
+  document.getElementById('s4-price').textContent = svc.price;
+  document.getElementById('s4-dur').textContent   = svc.duration;
+  document.getElementById('s4-date').textContent  = dateStr;
+  document.getElementById('s4-time').textContent  = timeStr;
+
+  /* Google Calendar URL */
+  const d  = STATE.date;
+  const ys = String(d.getFullYear());
+  const ms = String(d.getMonth()+1).padStart(2,'0');
+  const ds = String(d.getDate()).padStart(2,'0');
+  const sh = String(Math.floor(STATE.startMins/60)).padStart(2,'0');
+  const sm = String(STATE.startMins%60).padStart(2,'0');
+  const eh = String(Math.floor(endMins/60)).padStart(2,'0');
+  const em = String(endMins%60).padStart(2,'0');
+  const gcal = 'https://calendar.google.com/calendar/render?action=TEMPLATE' +
+    '&text=' + encodeURIComponent('Driving Lesson – Learners Bay') +
+    '&dates=' + ys+ms+ds+'T'+sh+sm+'00/' + ys+ms+ds+'T'+eh+em+'00' +
+    '&location=' + encodeURIComponent('34 Bradford Park Drive, Bolton BL2 1PA') +
+    '&details=' + encodeURIComponent('Learners Bay driving school lesson.');
+  document.getElementById('gcalBtn').href = gcal;
+
+  showStep(4);
+}
+
+/* ══ Hours toggle ══ */
+document.getElementById('hoursToggle').addEventListener('click', function () {
+  const open = document.getElementById('hoursDropdown').classList.toggle('hours-dropdown--open');
+  this.setAttribute('aria-expanded', open);
+  document.getElementById('hoursChevron').style.transform = open ? 'rotate(180deg)' : '';
+});
+</script>
+</body>
+</html>
