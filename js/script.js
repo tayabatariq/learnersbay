@@ -49,3 +49,10 @@ document.querySelectorAll('.faq-q').forEach(btn => {
     }
   });
 });
+
+/* Scroll-in animation — place before </body> */
+const galleryItems = document.querySelectorAll('.gallery-item');
+const galleryObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+galleryItems.forEach(el => galleryObserver.observe(el));
