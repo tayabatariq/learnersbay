@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/style.css">
 <!-- Font Awesome — already added, skip if in <head> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
 </head>
 <body>
 
@@ -87,23 +88,28 @@
 </nav>
 
 <!-- ════ HERO ════ -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-inner">
-    <div class="hero-badge"> Bolton's #1 Rated Driving School</div>
-    <h1>Learners Bay<br><em>Driving School</em></h1>
-    <p class="hero-sub">The best driving school in Bolton. DVSA-qualified instructors, flexible schedules, high first-time pass rates  for beginners and nervous learners alike.</p>
-    <div class="hero-stats">
-      <div class="hero-stat"><strong>12+</strong><span>Years Experience</span></div>
-      <div class="hero-stat"><strong>18</strong><span>Licensed Instructors</span></div>
-      <div class="hero-stat"><strong>870+</strong><span>Graduate Drivers</span></div>
-      <div class="hero-stat"><strong>25</strong><span>Courses Available</span></div>
-    </div>
-    <div class="hero-btns">
-      <a href="#" class="btn-primary">Find Out More</a>
-      <a href="#" class="btn-outline"> Call Us Now</a>
-    </div>
+<section class="lb-hero" id="home">
+
+  <div class="lb-hero-slides">
+    <div class="lb-hero-slide active"></div>
+    <div class="lb-hero-slide"></div>
+    <div class="lb-hero-slide"></div>
   </div>
+
+  <div class="lb-hero-overlay"></div>
+  <div class="lb-hero-bar" id="lbBar"></div>
+
+  <div class="lb-hero-inner">
+    <h1>Learners Bay<br>Driving School</h1>
+    <p class="lb-hero-sub">The best driving school in Bolton</p>
+    <a href="#aboutus" class="lb-hero-btn">
+      Find Out More
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <div class="lb-hero-dots" id="lbDots"></div>
+
 </section>
 
 
@@ -276,13 +282,7 @@
       </div>
       <h2 class="instructor-title">Learn with a former driving examiner</h2>
 
-      <div class="instructor-name-row">
-        <div class="instructor-avatar">R</div>
-        <div>
-          <strong>Rehan</strong>
-          <span>ADI Instructor · Bolton &amp; Bury</span>
-        </div>
-      </div>
+   
 
       <hr class="instructor-divider" />
 
@@ -292,18 +292,12 @@
         <blockquote class="instructor-highlight">
           <p>Having worked as an examiner, he knows exactly what examiners look for on the day — giving learners a clear advantage and significantly increasing their chances of passing first time.</p>
         </blockquote>
-
+<p>Based in Bolton and covering Bury, he is especially known for helping nervous learners become calm, confident, and in control behind the wheel.</p>
         <p>His teaching style is calm, structured, and results-driven. With a background in education, Rehan focuses on building real confidence, strong driving habits, and long-term safety — not just short-term test success.</p>
 
         <p>As a multilingual instructor, Rehan works comfortably with learners from diverse backgrounds including Pakistani, Indian, Bangladeshi, and Arab communities, ensuring clear communication and a supportive environment for all.</p>
       </div>
 
-      <div class="instructor-badges">
-        <span class="instructor-badge"><i class="ti ti-rosette"></i> DVSA qualified</span>
-        <span class="instructor-badge"><i class="ti ti-car"></i> Modern vehicles</span>
-        <span class="instructor-badge"><i class="ti ti-calendar"></i> Flexible programme</span>
-        <span class="instructor-badge"><i class="ti ti-users"></i> Experienced instructors</span>
-      </div>
     </div>
 
   </div>
@@ -311,7 +305,6 @@
 
 
 
-<!-- about us -->
 
 
 <!-- ═══ FEATURES BAR ═══ -->
@@ -336,6 +329,8 @@
   </div>
 </div>
 
+
+
 <!-- ═══ ABOUT SECTION ═══ -->
 <section class="about-section" id="aboutus">
   <div class="about-inner">
@@ -350,11 +345,9 @@
           <span>Fully qualified instructors</span>
         </div>
       </div>
-
       <div class="about-img-wrap">
-        <img src="image/aboutus.avif" alt="Driving lesson in Bolton" />
+        <img src="image/abouttt.jpg" alt="Driving lesson in Bolton" />
       </div>
-
       <div class="about-float-card bottom">
         <div class="about-float-num">95%</div>
         <div class="about-float-label">First-time<br>pass rate</div>
@@ -362,35 +355,25 @@
     </div>
 
     <div class="about-content">
-      <div class="about-eyebrow">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-        Based in Bolton
-      </div>
-      <h2 class="about-title">Driving lessons you can <span>trust from day one</span></h2>
-      <p class="about-desc">At Learners Bay Driving School, we transform beginners into confident road users. Our DVSA-qualified instructors provide personalised, one-on-one training that adapts to your pace — with flexible timings and courses ranging from pay-as-you-go to intensive programmes.</p>
+     
+      <h2 class="about-title">About <span>Learners Bay</span></h2>
+      <p class="about-desc">At Learners Bay Driving School, we take pride in transforming beginners into confident road users. Located in Bolton, we offer tailored driving lessons that accommodate various skill levels, focusing on building competence and safety. Our DVSA-qualified instructors provide personalized, one-on-one training that adapts to each individual's pace and comfort, ensuring you're ready for real-world driving. We offer flexible lesson timings and a range of courses, from standard pay-as-you-go sessions to intensive programs. Our positive reputation is reflected in our high first-time pass rates, backed by testimonials from satisfied learners. Whether you prefer manual or automatic lessons, our commitment to quality education and support sets us apart. Start your journey to becoming a responsible driver with us today!</p>
 
       <ul class="about-list">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Driving lessons in Bolton</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Affordable instructors near you</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Manual &amp; automatic lessons</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Intensive driving courses</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Affordable driving instructors near you</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Manual or automatic driving lessons in Bolton</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Intensive driving courses Bolton</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Refresher driving lessons UK</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Pass Plus courses</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>PASS PLUS Courses</li>
       </ul>
 
-      <a href="#contact" class="about-cta">
-        Book a lesson
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
     </div>
 
   </div>
 </section>
-
-
-
 <!-- Font Awesome CDN — add this in your <head> if not already there -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
 
 <!-- ═══ WHY CHOOSE US SECTION ═══ -->
 <section class="wc-section" id="whyus">
@@ -402,73 +385,61 @@
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
           Why choose us
         </div>
-        <h2 class="wc-title">The smarter way to <span>learn to drive</span></h2>
+        <h2 class="wc-title">Why Choose <span>Learners Bay?</span></h2>
       </div>
-      <p class="wc-sub">We don't just teach you to pass — we train you to drive safely for life.</p>
     </div>
 
     <div class="wc-body">
 
       <div class="wc-img-col">
         <div class="wc-img-main">
-          <img src="https://images.unsplash.com/photo-1527593167147-e9c94a5883e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRyaXZpbmclMjBsZXNzb25zfGVufDB8fDB8fHww" alt="Driving lesson Bolton" />
+          <img src="image/whychoose.jpg" alt="Driving lesson Bolton" />
         </div>
         <div class="wc-float-badge">
           <div class="wc-float-badge-num">95%</div>
           <div class="wc-float-badge-label">Pass rate</div>
         </div>
         <div class="wc-img-small">
-          <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJpdmluZyUyMGxlc3NvbnN8ZW58MHx8MHx8fDA%3D" alt="Instructor with learner" />
+          <img src="image/junior-reis-98AVD0fctzA-unsplash.jpg" alt="Instructor with learner" />
         </div>
       </div>
 
-      <div class="wc-reasons-col">
-        <div class="wc-reason">
-          <div class="wc-reason-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      <div class="wc-content-col">
+        <p class="wc-desc">
+          We've helped learners across Bolton go from complete beginners to confident drivers. Many of our students pass first time and recommend us to friends and family — a reflection of the quality and consistency we deliver.<br><br>
+          Learners Bay Driving School is here to help. We've built a strong reputation in Bolton for delivering high-quality lessons, excellent pass rates, and a supportive learning environment that puts students at ease.
+        </p>
+
+        <div class="wc-checklist">
+          <div class="wc-check-item">
+            <div class="wc-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="wc-check-text">DVSA-approved, highly experienced instructors</span>
           </div>
-          <div>
-            <div class="wc-reason-title">Former DVSA driving examiner</div>
-            <div class="wc-reason-desc">Our lead instructor worked as an examiner — he knows exactly what the test requires and trains you to that standard from lesson one.</div>
+          <div class="wc-check-item">
+            <div class="wc-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="wc-check-text">Personalised one-to-one driving lessons</span>
           </div>
-        </div>
-        <div class="wc-reason">
-          <div class="wc-reason-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          <div class="wc-check-item">
+            <div class="wc-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="wc-check-text">High first-time pass rate</span>
           </div>
-          <div>
-            <div class="wc-reason-title">Structured, results-driven lessons</div>
-            <div class="wc-reason-desc">Every lesson is planned with clear goals. No wasted time — just steady, measurable progress that gets you test-ready faster.</div>
+          <div class="wc-check-item">
+            <div class="wc-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="wc-check-text">Flexible lesson times — evenings &amp; weekends</span>
           </div>
-        </div>
-        <div class="wc-reason">
-          <div class="wc-reason-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <div class="wc-check-item">
+            <div class="wc-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="wc-check-text">Competitive pricing with no hidden costs</span>
           </div>
-          <div>
-            <div class="wc-reason-title">Flexible lesson times that suit you</div>
-            <div class="wc-reason-desc">Morning, evening, weekend — we work around your schedule. Pay-as-you-go or intensive courses, your choice.</div>
-          </div>
-        </div>
-        <div class="wc-reason">
-          <div class="wc-reason-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          </div>
-          <div>
-            <div class="wc-reason-title">Specialist in nervous learners</div>
-            <div class="wc-reason-desc">Calm, patient, and supportive — many of our students came to us after struggling elsewhere.</div>
+          <div class="wc-check-item">
+            <div class="wc-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span class="wc-check-text">Friendly, patient &amp; professional teaching approach</span>
           </div>
         </div>
-        <div class="wc-reason">
-          <div class="wc-reason-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17H3a2 2 0 01-2-2V9a2 2 0 012-2h14l4 4v4a2 2 0 01-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
-          </div>
-          <div>
-            <div class="wc-reason-title">Modern, dual-controlled vehicles</div>
-            <div class="wc-reason-desc">Learn in clean, well-maintained cars with dual controls. Manual and automatic both available.</div>
-          </div>
-        </div>
+
+      
       </div>
+
     </div>
 
     <div class="wc-strip">
@@ -492,7 +463,37 @@
 
   </div>
 </section>
+<!-- COOKIE OVERLAY -->
+<div class="cookie-overlay" id="cookieOverlay"></div>
 
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-inner">
+    <div class="cookie-left">
+      <div class="cookie-icon-row">
+        <div class="cookie-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <span class="cookie-title">Consent to data protection</span>
+      </div>
+      <p class="cookie-text">
+        This site uses cookies to store information on your computer. By clicking on the button  you allow us to improve the user experience and personalise services for you. You can change this decision at any time.
+      </p>
+      <div class="cookie-links">
+        <a href="#">Legal Notice</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-btn-accept" onclick="acceptCookies()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15"><polyline points="20 6 9 17 4 12"/></svg>
+        Yes, I Agree
+      </button>
+      <button class="cookie-btn-reject" onclick="rejectCookies()">Reject all use of data</button>
+     
+    </div>
+  </div>
+</div>
 <!-- ═══ GALLERY SECTION ═══ -->
 <!-- ═══ GALLERY SECTION ═══ -->
 <section class="gallery-section" id="gallery">
@@ -591,12 +592,8 @@
   <div class="join-inner">
 
     <div class="join-head">
-      <div class="join-eyebrow">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-        Instructor opportunities
-      </div>
+     
       <h2 class="join-title">Join Our Team as an <span>ADI or PDI</span></h2>
-      <p class="join-subtitle">No franchise pressure. No expensive fees. Just real support, consistent learners, and a fair way to grow your income.</p>
     </div>
 
     <div class="join-grid">
@@ -656,22 +653,7 @@
 
     </div>
 
-    <div class="join-bottom">
-      <div class="join-bottom-text">
-        <strong>Ready to take control of your career?</strong>
-        <span>Get in touch today and start earning more with Learners Bay.</span>
-      </div>
-      <div class="join-cta-row">
-        <a href="#contact" class="join-btn-primary">
-          Apply now
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="tel:+441234567890" class="join-btn-secondary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          Call us
-        </a>
-      </div>
-    </div>
+  
 
   </div>
 </section>
@@ -680,11 +662,7 @@
   <div class="st-bg"></div>
   <div class="st-overlay"></div>
   <div class="st-inner">
-    <div class="st-head">
-      <div class="st-eyebrow">Our track record</div>
-      <h2 class="st-title">Numbers that speak for themselves</h2>
-      <p class="st-sub">Trusted by hundreds of learners across Bolton and Bury to deliver results that matter.</p>
-    </div>
+   
     <div class="st-grid">
       <div class="st-card">
         <div class="st-icon" aria-hidden="true">

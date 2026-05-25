@@ -56,3 +56,63 @@ const galleryObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
 galleryItems.forEach(el => galleryObserver.observe(el));
+
+
+/* ── COOKIE SCRIPT — place before </body> ── */
+function acceptCookies() {
+  localStorage.setItem('cookieConsent', 'accepted');
+  document.getElementById('cookieBanner').classList.remove('visible');
+  document.getElementById('cookieOverlay').classList.remove('visible');
+}
+function rejectCookies() {
+  localStorage.setItem('cookieConsent', 'rejected');
+  document.getElementById('cookieBanner').classList.remove('visible');
+  document.getElementById('cookieOverlay').classList.remove('visible');
+}
+
+// Auto-show on first visit
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    if (!localStorage.getItem('cookieConsent')) {
+      document.getElementById('cookieBanner').classList.add('visible');
+      document.getElementById('cookieOverlay').classList.add('visible');
+    }
+  }, 800);
+});
+
+/* ── HERO SLIDER — place before </body> ── */
+const lbSlides = document.querySelectorAll('.lb-hero-slide');
+const lbDots   = document.getElementById('lbDots');
+const lbBar    = document.getElementById('lbBar');
+let lbCur = 0, lbTimer;
+
+lbSlides.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.className = 'lb-hero-dot' + (i === 0 ? ' active' : '');
+  d.setAttribute('aria-label', 'Slide ' + (i + 1));
+  d.onclick = () => { lbGoTo(i); lbReset(); };
+  lbDots.appendChild(d);
+});
+
+function lbGoTo(n) {
+  lbSlides[lbCur].classList.remove('active');
+  lbDots.children[lbCur].classList.remove('active');
+  lbCur = (n + lbSlides.length) % lbSlides.length;
+  lbSlides[lbCur].classList.add('active');
+  lbDots.children[lbCur].classList.add('active');
+  lbBar.classList.remove('run');
+  lbBar.style.transition = 'none';
+  lbBar.style.width = '0%';
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    lbBar.style.transition = 'width 2s linear';
+    lbBar.classList.add('run');
+  }));
+}
+
+function lbReset() {
+  clearInterval(lbTimer);
+  lbTimer = setInterval(() => lbGoTo(lbCur + 1), 2000);
+}
+
+lbGoTo(0);
+lbReset();
